@@ -1,0 +1,1291 @@
+﻿@model ShastraSoft.Models.Contact
+@{
+    ViewData["MetaDescription"] = "Discover innovative IT services at Shastra Soft. Expert software development, cloud solutions, cyber security, and digital transformation for businesses worldwide.";
+    ViewData["MetaKeywords"] = "IT company, software development, cloud services, cyber security, IT support, digital transformation, web development, app development, Shastra Soft, managed IT services";
+}
+
+<!-- Hero Section -->
+<section id="hero" class="hero section">
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                <div class="hero-content">
+                    <h1>Solutions Designed for Growth</h1>
+                    <p>Our team builds innovative digital products designed to transform your business and keep you ahead in a competitive market.</p>
+                    <div class="hero-buttons">
+                        <a href="@Url.Action("Index", "Home")" data-target="contact" class="scroll-link btn btn-primary">Get Started</a>
+                        <a href="@Url.Action("Index", "Home")" data-target="portfolio" class="scroll-link btn btn-outline">Our Work</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1"></span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1"></span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1"></span>
+                            <span class="stat-label">Team Members</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                <div class="hero-visual">
+                    <div class="hero-image">
+                        <img src="@Url.Content("~/images/misc-16-hero.jpg")" alt="Digital Agency Hero" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-bg-elements">
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        <div class="bg-particles"></div>
+    </div>
+
+</section>
+<!-- /Hero Section -->
+<!-- About Section -->
+<section id="about" class="about section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5 align-items-center">
+
+            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+                <div class="content">
+                    <h6 class="subtitle">Discover Our Story</h6>
+                    <h2>Innovative technology crafted for your business needs</h2>
+                    <p>
+                        Innovative technology crafted for your business needs means creating smart, customized solutions that simplify your processes, improve performance, and support your growth—helping your business stay competitive in a fast-moving digital world.
+                    </p>
+
+                    <ul class="features-list">
+                        <li><i class="bi bi-check-circle-fill"></i><span>Born from a desire to innovate, we craft technology that empowers businesses.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i><span>Shaped by experience and guided by creativity, our story is built on progress.</span></li>
+                        <li><i class="bi bi-check-circle-fill"></i><span>With each project, we strive to deliver meaningful digital experiences.</span></li>
+                    </ul>
+
+                    <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Discover More</a>
+                </div>
+            </div>
+
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+                <div class="image-composition">
+                    <div class="image-main">
+                        <img src="@Url.Content("~/images/about-9.jpg")" alt="Modern office with a team working" class="img-fluid" loading="lazy">
+                    </div>
+                    <div class="image-secondary">
+                        <img src="@Url.Content("~/images/about-square-8.jpg")" alt="Collaborative discussion" class="img-fluid" loading="lazy">
+                    </div>
+                    <div class="stats-card">
+                        <div class="stats-item">
+                            <h3>10+</h3>
+                            <p>Years of Expertise</p>
+                        </div>
+                        <div class="stats-item">
+                            <h3>50+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- /About Section -->
+<!-- Services Section -->
+<section id="services" class="services section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Delivering tailored solutions designed to meet your needs with precision and care    </p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-palette"></i>
+                    </div>
+                    <h4><a href="@Url.Action("Index", "Brand")">Brand Identity Design</a></h4>
+                    <p>We create meaningful, memorable brand identities that communicate your values and connect genuinely with target audiences.</p>
+                    <a href="@Url.Action("Index", "Brand")" class="service-link">
+                        <span>Learn More</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-layout-text-window-reverse"></i>
+                    </div>
+                    <h4><a href="@Url.Action("Index", "Design")">UI/UX Design</a></h4>
+                    <p>We craft intuitive, visually appealing digital experiences that prioritize simplicity, usability, accessibility, and interaction across platforms.</p>
+                    <a href="@Url.Action("Index", "Design")" class="service-link">
+                        <span>Learn More</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-megaphone"></i>
+                    </div>
+                    <h4><a href="@Url.Action("Index", "Digital")">Digital Marketing</a></h4>
+                    <p>We craft data-driven marketing strategies that increase brand awareness, generate quality leads, and support measurable business growth.</p>
+                    <a href="@Url.Action("Index", "Digital")" class="service-link">
+                        <span>Learn More</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-code-slash"></i>
+                    </div>
+                    <h4><a href="@Url.Action("Index", "WebDevelopment")">Web Development</a></h4>
+                    <p>We build high-performance, scalable websites tailored to business needs, ensuring speed, usability, reliability, and long-term growth.</p>
+                    <div class="service-badge">Most Popular</div>
+                    <a href="@Url.Action("Index", "WebDevelopment")" class="service-link">
+                        <span>Learn More</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-phone"></i>
+                    </div>
+                    <h4><a href="@Url.Action("Index", "MobileDevelopment")">Mobile App Development</a></h4>
+                    <p>We design modern, user-friendly mobile applications focused on clarity, functionality, usability, consistent performance, and delightful experiences.</p>
+                    <a href="@Url.Action("Index", "MobileDevelopment")" class="service-link">
+                        <span>Learn More</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h4><a href="@Url.Action("Index", "Desktop")">Desktop Apps</a></h4>
+                    <p>We build fast, intuitive desktop applications focused on usability, stability, performance, and seamless workflows.</p>
+                    <a href="@Url.Action("Index", "Desktop")" class="service-link">
+                        <span>Learn More</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h4><a href="@Url.Action("Index", "System")">System Intergation</a></h4>
+                    <p>We deliver seamless system integration focused on connectivity, automation, efficiency, secure data flow, and unified experiences.</p>
+                    <a href="@Url.Action("Index", "System")" class="service-link">
+                        <span>Learn More</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h4><a href="@Url.Action("Index", "Cloud")">Cloud Service</a></h4>
+                    <p>We provide secure, scalable cloud solutions focused on flexibility, automation, performance, and smooth user experiences.</p>
+                    <a href="@Url.Action("Index", "Cloud")" class="service-link">
+                        <span>Learn More</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="1000">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <h4><a href="@Url.Action("Index", "SEO")">SEO</a></h4>
+                    <p>We enhance search visibility using targeted SEO techniques that improve rankings, drive traffic, and ensure sustainable, long-term results.</p>
+                    <a href="@Url.Action("Index", "SEO")" class="service-link">
+                        <span>Learn More</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="400">
+                <div class="services-cta">
+                    <h3>Ready to Transform Your Digital Presence?</h3>
+                    <p>Let's discuss your project and create something amazing together</p>
+                    <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Get Started Today</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- /Services Section -->
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Transforming Challenges Into Powerful Solutions</p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+                <li data-filter="*" class="filter-active">All Projects</li>
+                <li data-filter=".filter-web">Web Design</li>
+                <li data-filter=".filter-panel">Admin Panel</li>
+                @* <li data-filter=".filter-branding">Branding</li> *@
+                @* <li data-filter=".filter-ui">UI/UX</li> *@
+            </ul>
+            <!-- End Portfolio Filters -->
+
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-web">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="@Url.Content("~/images/jogi.png")" alt="Creative Web Project" class="img-fluid" loading="lazy">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-actions">
+                                    <a href="@Url.Content("~/images/jogi.png")" class="glightbox action-btn preview-btn" title="Jogi Safetech">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="https://jogisafetech.com/" target="_blank" class="action-btn details-btn" title="View Details">
+                                        <i class="bi bi-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="project-type">Web Design</span>
+                            </div>
+                            <h3>JogiSafeTech – Smart Fire Safety Solution</h3>
+                            <p>
+                                A modern platform offering advanced fire safety products and real-time safety solutions.
+                                Designed to enhance protection, monitoring, and emergency response.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-badge">.NET Core</span>
+                                <span class="tech-badge">HTML/CSS</span>
+                                <span class="tech-badge">Javascript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-web">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="@Url.Content("~/images/fivora.png")" alt="Creative Web Project" class="img-fluid" loading="lazy">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-actions">
+                                    <a href="@Url.Content("~/images/fivora.png")" class="glightbox action-btn preview-btn" title="Fivora Group">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="https://www.fivoragroup.in/" target="_blank" class="action-btn details-btn" title="View Details">
+                                        <i class="bi bi-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="project-type">Web Design</span>
+                            </div>
+                            <h3>Fivora Group – Digital Insurance Solution</h3>
+                            <p>
+                                A modern insurance platform offering smart policy management, online claims, secure payments, real-time policy updates, and seamless customer support.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-badge">.NET Core</span>
+                                <span class="tech-badge">SQL Server</span>
+                                <span class="tech-badge">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-panel">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="@Url.Content("~/images/admin.png")" alt="Fintech Mobile App" class="img-fluid" loading="lazy">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-actions">
+                                    <a href="@Url.Content("~/images/admin.png")" class="glightbox action-btn preview-btn" title="E-Commerce Admin Panel">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="" target="_blank" class="action-btn details-btn" title="View Details">
+                                        <i class="bi bi-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="project-type">Admin Panel</span>
+                            </div>
+                            <h3>E-Commerce Admin Panel</h3>
+                            <p>
+                                “A modern e-commerce admin panel offering advanced tools to manage products, orders, customers, and payments in real time. Designed to enhance control, performance monitoring, and smooth business operations
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-badge">.NET Framework</span>
+                                <span class="tech-badge">SQL</span>
+                                <span class="tech-badge">JQuery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-web">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="@Url.Content("~/images/onyix.png")" alt="web Project" class="img-fluid" loading="lazy">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-actions">
+                                    <a href="@Url.Content("~/images/onyix.png")" class="glightbox action-btn preview-btn" title="Onyx Pigment">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="https://onyxpigment.com/" target="_blank" class="action-btn details-btn" title="View Details">
+                                        <i class="bi bi-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="project-type">Web Design</span>
+                            </div>
+                            <h3>Onyx Pigment – Industrial Chemical Solutions</h3>
+                            <p>
+                                A modern platform showcasing premium chemical pigments with
+                                product-focused design, easy navigation, and strong brand identity.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">Figma</span>
+                                <span class="tech-badge">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-web">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="@Url.Content("~/images/ministyle.png")" alt="web Project" class="img-fluid" loading="lazy">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-actions">
+                                    <a href="@Url.Content("~/images/ministyle.png")" class="glightbox action-btn preview-btn" title="MiniStyle">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="https://ministyle.in/" target="_blank" class="action-btn details-btn" title="View Details">
+                                        <i class="bi bi-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="project-type">E-Commerce</span>
+                            </div>
+                            <h3>MiniStyle – Kids Fashion Shopping E-Commerce</h3>
+                            <p>
+                                A playful and responsive E-commerce site focused on children’s products,
+                                offering a clean UI, smooth checkout, and secure shopping experience.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-badge">HTML/CSS</span>
+                                <span class="tech-badge">SQL Server</span>
+                                <span class="tech-badge">MVC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-web">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="@Url.Content("~/images/bulk-flow.png")" alt="E-commerce Platform" class="img-fluid" loading="lazy">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-actions">
+                                    <a href="@Url.Content("~/images/bulk-flow.png")" class="glightbox action-btn preview-btn" title="Bulk Flow">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="https://bulk-flo.com/" target="_blank" class="action-btn details-btn" title="View Details">
+                                        <i class="bi bi-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="project-type">Web Design</span>
+                            </div>
+                            <h3>Bulk Flow Motor & Tank Supply Platform</h3>
+                            <p>
+                                An industrial website that highlights motors, tanks, and flow solutions
+                                with a structured product catalog and professional corporate layout.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-badge">HTML/CSS</span>
+                                <span class="tech-badge">JQuery</span>
+                                <span class="tech-badge">Boostrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-web">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="@Url.Content("~/images/rj.png")" alt="Fintech Mobile App" class="img-fluid" loading="lazy">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-actions">
+                                    <a href="@Url.Content("~/images/rj.png")" class="glightbox action-btn preview-btn" title="RJ Kapdaaz">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="https://www.rjkapdaaz.com/" target="_blank" class="action-btn details-btn" title="View Details">
+                                        <i class="bi bi-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="project-type">Web Design</span>
+                            </div>
+                            <h3>RJ Kapdaaz – Premium Uniform & Hospitality Wear</h3>
+                            <p>
+                                A stylish product-focused platform showcasing hotel, corporate, and
+                                hospitality uniforms with high-quality visuals and a clean shopping flow.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-badge">HTML/CSS</span>
+                                <span class="tech-badge">Boostrap</span>
+                                <span class="tech-badge">JQuery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-panel">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="@Url.Content("~/images/attend.png")" alt="Fintech Mobile App" class="img-fluid" loading="lazy">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-actions">
+                                    <a href="@Url.Content("~/images/attend.png")" class="glightbox action-btn preview-btn" title="Attend Edge">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="" target="_blank" class="action-btn details-btn" title="View Details">
+                                        <i class="bi bi-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="project-type">Admin Panel</span>
+                            </div>
+                            <h3>AttendEdge</h3>
+                            <p>
+                                AttendEdge is a smart attendance app designed to simplify attendance management from anywhere. It allows users to mark attendance using real-time selfies with location tracking, ensuring accuracy, transparency.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-badge">.NET Framework</span>
+                                <span class="tech-badge">Linq</span>
+                                <span class="tech-badge">C#</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-panel">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="@Url.Content("~/images/instructor.png")" alt="Fintech Mobile App" class="img-fluid" loading="lazy">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-actions">
+                                    <a href="@Url.Content("~/images/instructor.png")" class="glightbox action-btn preview-btn" title="Instuctor">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="" target="_blank" class="action-btn details-btn" title="View Details">
+                                        <i class="bi bi-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="project-type">Admin Panel</span>
+                            </div>
+                            <h3>Instructor</h3>
+                            <p>
+                                An instructor-focused platform designed to manage student lectures, schedules, and course content efficiently. Enables seamless tracking of classes, student participation, and overall academic progress.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-badge">.NET CORE</span>
+                                <span class="tech-badge">Entity Framework</span>
+                                <span class="tech-badge">MVC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-panel">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="@Url.Content("~/images/grfm-website.png")" alt="Fintech Mobile App" class="img-fluid" loading="lazy">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-actions">
+                                    <a href="@Url.Content("~/images/grfm-website.png")" class="glightbox action-btn preview-btn" title="GRFM">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="" target="_blank" class="action-btn details-btn" title="View Details">
+                                        <i class="bi bi-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="project-type">Admin Panel</span>
+                            </div>
+                            <h3>GRFM</h3>
+                            <p>
+                                A curtain quotation management platform designed to streamline curtain product selection, customer quotations, pricing, and order details. Enables admins to manage curtain products, create customized quotations, manage customer requirements, and generate professional quotation reports in Excel format.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-badge">Boostrap</span>
+                                <span class="tech-badge">Entity Framework</span>
+                                <span class="tech-badge">MVC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-panel">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="@Url.Content("~/images/school.png")" alt="Fintech Mobile App" class="img-fluid" loading="lazy">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-actions">
+                                    <a href="@Url.Content("~/images/school.png")" class="glightbox action-btn preview-btn" title="SchoolERP">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="" target="_blank" class="action-btn details-btn" title="View Details">
+                                        <i class="bi bi-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="project-type">Admin Panel</span>
+                            </div>
+                            <h3>SchoolERP</h3>
+                            <p>
+                                A comprehensive school management platform designed to streamline academic and administrative operations. Supports multiple user logins with role-based access for Admin, Teacher, Student, and Parent, along with modules for student management, attendance, exams, fees, hostel, transport, homework, staff, and reports.
+
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-badge">Boostrap(5.3)</span>
+                                <span class="tech-badge">Stored Procedure</span>
+                                <span class="tech-badge">Dotnet Core-9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-panel">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-image">
+                            <img src="@Url.Content("~/images/ikm.png")" alt="Fintech Mobile App" class="img-fluid" loading="lazy">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-actions">
+                                    <a href="@Url.Content("~/images/ikm.png")" class="glightbox action-btn preview-btn" title="IKIM">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
+                                    <a href="" target="_blank" class="action-btn details-btn" title="View Details">
+                                        <i class="bi bi-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-meta">
+                                <span class="project-type">Admin Panel</span>
+                            </div>
+                            <h3>IKim</h3>
+                            <p>
+                                A comprehensive order management platform designed to streamline franchise and party order processing. Includes franchise order management through a dedicated app, party-wise order tracking, daily sales and purchase management, inventory monitoring, and detailed sales and purchase reports for efficient business operations.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-badge">Boostrap</span>
+                                <span class="tech-badge">Entity Framework</span>
+                                <span class="tech-badge">MVC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End Portfolio Items Container -->
+
+        </div>
+
+        <div class="portfolio-cta text-center" data-aos="fade-up" data-aos-delay="400">
+            <h4>Ready to start your next project?</h4>
+            <p>Let's work together to bring your digital vision to life</p>
+            <div class="cta-buttons">
+                <a href="@Url.Action("Index", "Home")" data-target="contact" class="scroll-link btn btn-primary">Start a Project</a>
+                <a href="@Url.Action("Index", "Home")" data-target="portfolio" class="scroll-link btn btn-outline">View All Work</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- /Portfolio Section -->
+<!-- Why Us Section -->
+<section id="why-us" class="why-us section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Why Us</h2>
+        <p>Driven by Creativity. Powered by Expertise.</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="icon-wrapper">
+                        <i class="bi bi-palette-fill"></i>
+                    </div>
+                    <h4>Creative Excellence</h4>
+                    <p>We combine imagination with strategy to create impactful digital experiences that make your brand stand out and connect deeply with your audience.</p>
+                    <div class="feature-stats">
+                        <span class="stat-number" data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="2">50</span>
+                        <span class="stat-label">% Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+            <!-- End Feature Card -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-card">
+                    <div class="icon-wrapper">
+                        <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+                    <h4>Proven Results</h4>
+                    <p>Our solutions are guided by data, precision, and industry-tested methods, ensuring consistent growth and meaningful outcomes for your business.</p>
+                    <div class="feature-stats">
+                        <span class="stat-number" data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="2">50</span>
+                        <span class="stat-label">% ROI Increase</span>
+                    </div>
+                </div>
+            </div>
+            <!-- End Feature Card -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-card">
+                    <div class="icon-wrapper">
+                        <i class="bi bi-award-fill"></i>
+                    </div>
+                    <h4>Expert Team</h4>
+                    <p>A group of skilled professionals committed to delivering high-quality work, leveraging experience and innovation to bring your vision to life.</p>
+                    <div class="feature-stats">
+                        <span class="stat-number" data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="2">10</span>
+                        <span class="stat-label">+ Awards Won</span>
+                    </div>
+                </div>
+            </div>
+            <!-- End Feature Card -->
+
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+                <div class="feature-showcase">
+                    <img src="@Url.Content("~/images/illustration-14.jpg")" alt="Creative Process" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                <div class="feature-content">
+                    <h3>Why Leading Brands Choose Us</h3>
+                    <p class="lead">Brands choose us for our strategic mindset, data-backed solutions, and unwavering dedication to delivering exceptional outcomes.</p>
+
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-check-circle-fill"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h5>Strategic Thinking</h5>
+                                <p>We analyze your goals with a forward-thinking mindset, crafting smart strategies that help your business grow stronger and compete effectively in a fast-changing digital landscape.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-check-circle-fill"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h5>Data-Driven Approach</h5>
+                                <p>Our decisions are guided by real insights and analytics, ensuring every solution is optimized for performance, efficiency, and measurable results that truly drive success.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-check-circle-fill"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h5>24/7 Support</h5>
+                                <p>We provide continuous, reliable support whenever you need it, ensuring smooth operations, quick assistance, and complete peace of mind around the clock.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cta-wrapper">
+                        <a href="@Url.Action("Index", "Home")" data-target="contact" class="scroll-link btn btn-primary">Start Your Project</a>
+                        <a href="@Url.Action("Index", "Home")" data-target="portfolio" class="scroll-link btn btn-outline">View Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- /Why Us Section -->
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>See how our work has transformed ideas into results through the voices of our satisfied clients</p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="testimonials-slider swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 4000
+                  },
+                  "slidesPerView": 1,
+                  "centeredSlides": true,
+                  "spaceBetween": 20,
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "768": {
+                      "slidesPerView": 1.5,
+                      "spaceBetween": 30
+                    },
+                    "1200": {
+                      "slidesPerView": 3,
+                      "spaceBetween": 40
+                    }
+                  }
+                }
+            </script>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="testimonial-header">
+                            <div class="user-avatar">
+                                <img src="@Url.Content("~/images/rahul.png")" alt="Profile Image">
+                            </div>
+                            <div class="user-info">
+                                <h3>Rahul Jhawer</h3>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>Working with the team turned our product vision into a clean, usable experience — faster than we imagined.</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="company-badge">
+                                <i class="bi bi-building"></i>
+                                <span>TechCorp</span>
+                            </div>
+                            <div class="verified-badge">
+                                <i class="bi bi-patch-check-fill"></i>
+                                <span>Verified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="testimonial-header">
+                            <div class="user-avatar">
+                                <img src="@Url.Content("~/images/ankit.png")" alt="Profile Image">
+                            </div>
+                            <div class="user-info">
+                                <h3>Aniket Guhe</h3>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>Pixel-perfect implementation and performance optimizations made our app feel buttery smooth across devices</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="company-badge">
+                                <i class="bi bi-building"></i>
+                                <span>InnovateLab</span>
+                            </div>
+                            <div class="verified-badge">
+                                <i class="bi bi-patch-check-fill"></i>
+                                <span>Verified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="testimonial-header">
+                            <div class="user-avatar">
+                                <img src="@Url.Content("~/images/onyixt.png")" alt="Profile Image">
+                            </div>
+                            <div class="user-info">
+                                <h3>Vinod</h3>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>Helped us craft campaigns that boosted engagement and delivered measurable growth across all channels.</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="company-badge">
+                                <i class="bi bi-building"></i>
+                                <span>GrowthCo</span>
+                            </div>
+                            <div class="verified-badge">
+                                <i class="bi bi-patch-check-fill"></i>
+                                <span>Verified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="testimonial-header">
+                            <div class="user-avatar">
+                                <img src="@Url.Content("~/images/person-m-14.jpg")" alt="Profile Image">
+                            </div>
+                            <div class="user-info">
+                                <h3>Sunil</h3>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>“Built a fast, stable Android app with smooth navigation and zero performance issues across devices.</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="company-badge">
+                                <i class="bi bi-building"></i>
+                                <span>DevStream</span>
+                            </div>
+                            <div class="verified-badge">
+                                <i class="bi bi-patch-check-fill"></i>
+                                <span>Verified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="testimonial-header">
+                            <div class="user-avatar">
+                                <img src="@Url.Content("~/images/gemini_generated_image_psudtvpsudtvpsud.png")" alt="Profile Image">
+                            </div>
+                            <div class="user-info">
+                                <h3>Nakul Kapadia</h3>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>The UX improvements increased engagement and made complex flows feel effortless for users.</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="company-badge">
+                                <i class="bi bi-building"></i>
+                                <span>UserFirst</span>
+                            </div>
+                            <div class="verified-badge">
+                                <i class="bi bi-patch-check-fill"></i>
+                                <span>Verified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+</section>
+<!-- /Testimonials Section -->
+<!-- Team Section -->
+<section id="team" class="team section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Our team combines strategy, skill, and innovation to deliver outstanding results</p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+
+            <div class="col-lg-6">
+                <div class="team-intro" data-aos="fade-right" data-aos-delay="150">
+                    <div class="intro-content">
+                        <h3>Meet Our Exceptional Team</h3>
+                        <p>Driven by passion and guided by purpose, our team combines creativity, strategy, and technology to shape the future of digital experiences</p>
+                        <div class="stats-row">
+                            <div class="stat-item">
+                                <span class="stat-number">12+</span>
+                                <span class="stat-label">Team Members</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Departments</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Countries</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="team-grid" data-aos="fade-left" data-aos-delay="200">
+                    <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="250">
+                        <div class="hexagon-inner">
+                            <img src="@Url.Content("~/images/drash 2.png")" alt="Team member">
+                            <div class="member-overlay">
+                                <h5>Drashti Modi</h5>
+                                <span>Founder</span>
+                                @* <div class="social-icons">
+                                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    <a href="#"><i class="bi bi-twitter"></i></a> 
+                                </div> *@
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="hexagon-inner">
+                            <img src="@Url.Content("~/images/prig1.png")" alt="Team member">
+                            <div class="member-overlay">
+                                <h5>Prignesh Modi</h5>
+                                <span>CEO</span>
+                                @* <div class="social-icons">
+                                     <a href="@Url.Action("Index" ,"Home")"><i class="bi bi-github"></i></a>
+                                    <a href="@Url.Action("Index", "Home")"><i class="bi bi-linkedin"></i></a> 
+                                </div> *@
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="350">
+                        <div class="hexagon-inner">
+                            <img src="@Url.Content("~/images/emp1.png")" alt="Team member">
+                            <div class="member-overlay">
+                                <h5>Deep Pandya</h5>
+                                <span>Senior Developer</span>
+                                @* <div class="social-icons">
+                                     <a href="#"><i class="bi bi-dribbble"></i></a> 
+                                </div> *@
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="hexagon-inner">
+                            <img src="@Url.Content("~/images/emp2.png")" alt="Team member">
+                            <div class="member-overlay">
+                                <h5>Sahil Gondaliya</h5>
+                                <span>Senior Developer</span>
+                                @* <div class="social-icons">
+                                     <a href="#"><i class="bi bi-linkedin"></i></a> 
+                                </div> *@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="join-team-cta" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cta-icon">
+                        <i class="bi bi-rocket-takeoff"></i>
+                    </div>
+                    <div class="cta-content">
+                        <h4>Ready to Join Our Mission?</h4>
+                        <p>We’re building something extraordinary, and we’d love for you to contribute your talent and passion to our journey.</p>
+                        <div class="cta-actions">
+                            <a href="@Url.Action("Index", "Home")" class="btn btn-primary">View Open Roles</a>
+                            <a href="@Url.Action("Index", "Home")" class="btn btn-outline">Learn Our Culture</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- /Team Section -->
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Connect with us today and let’s start building something exceptional together</p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center">
+            <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+                <div class="contact-form-card">
+                    <div class="form-header">
+                        <div class="header-icon">
+                            <i class="bi bi-chat-dots-fill"></i>
+                        </div>
+                        <h3>Let's Start a Conversation</h3>
+                        <p>Whether you have a question, need a quote, or want to discuss your project, our team is ready to assist you every step of the way.</p>
+                    </div>
+
+                    <form asp-action="Index" asp-controller="Home" method="post" class="php-email-form" id="frmContactUs">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Your Name" })
+                                <span class="text-danger" id="spnName"></span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Your Email Address", Type = "Email" })
+                                <span class="text-danger" id="spnEmail"></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            @Html.TextBoxFor(m => m.Subject, new { @class = "form-control", placeholder = "What's this about?" })
+                            <span class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-4">
+                            @Html.TextAreaFor(m => m.Message, new { @class = "form-control", placeholder = "Tell us more about your project...", @rows = "4" })
+                            <span class="text-danger"></span>
+                        </div>
+                        
+                        <a href="javascript:void(0);" class="btn form-color btn-send"><i class="bi bi-send-fill"></i> Send Message</a>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+                <div class="contact-info-area">
+                    <div class="info-header">
+                        <h3>Ready to Transform Your Ideas?</h3>
+                        <p>Reach out to us and discover how our expertise can help transform your ideas into powerful digital solutions.</p>
+                    </div>
+
+                    <div class="contact-methods">
+                        <div class="method-card" data-aos="zoom-in" data-aos-delay="250">
+                            <div class="card-icon">
+                                <i class="bi bi-envelope-at"></i>
+                            </div>
+                            <div class="card-content">
+                                <h5>Email Us</h5>
+                                <p>
+                                    <a href="https://mail.google.com/mail/?view=cm&to=social@shastrasoft.net&su=Inquiry%20about%20IT%20Services"
+                                       target="_blank" rel="noopener">
+                                        social@shastrasoft.net
+                                    </a>
+                                </p>
+                                <span class="response-time">Response in 2-4 hours</span>
+                            </div>
+                        </div>
+
+                        <div class="method-card" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="card-icon">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <div class="card-content">
+                                <h5>Call Us</h5>
+                                <p><a href="tel:+919925521142">+91 99255 21142</a></p>
+                                <span class="response-time">Available 10:00 AM - 07:00 PM IST</span>
+                            </div>
+                        </div>
+
+                        <div class="method-card" data-aos="zoom-in" data-aos-delay="350">
+                            <div class="card-icon">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <div class="card-content">
+                                <h5>Visit Our Office</h5>
+                                <p>304, 3rd Floor, Liberty Chambers,</p>
+                                <p>Opp. Triveni Apt.,</p>
+                                <p>Timaliyawad Main Road, Nanpura, Surat - 395001</p>
+                                <span class="response-time">Open Monday - Saturday</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="additional-info" data-aos="fade-up" data-aos-delay="400">
+                        <div class="info-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">24h</div>
+                                <div class="stat-label">Average Response</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Client Satisfaction</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Projects Delivered</div>
+                            </div>
+                        </div>
+                        <div class="social-connect">
+                            <h6>Connect With Us</h6>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                                <a href="https://www.instagram.com/shastrasoft/?igsh=MWwxajAwaGh0N2llYg%3D%3D&utm_source=ig_contact_invite#" target="_blank"><i class="bi bi-instagram"></i></a>
+                                <a href="https://in.linkedin.com/?mcid=6844056167778418689&src=go-pa&trk=sem-ga_campid.14650114788_asid.151761418307_crid.657403558718_kw.linkedin%20login_d.c_tid.kwd-12704335873_n.g_mt.e_geo.9062191&cid=&gclsrc=aw.ds&gad_source=1&gad_campaignid=14650114788&gbraid=0AAAAABKX7wFcnsKYj8vJWVtAEHE3MJOVh&gclid=CjwKCAiAl-_JBhBjEiwAn3rN7aX9qNqAlkWjvejrH3eKNwO8lQOitPKFF80QMOv7sLfSRKYBaIRG1hoCs3oQAvD_BwE" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Contact Section -->
+@Html.Hidden("NotificationType", (object)ViewBag.NotificationType)
+@Html.Hidden("NotificationMsg", (object)ViewBag.NotificationMsg)
+
+<script src="@Url.Content("~/js/jquery.js")"></script>
+<script>
+    $(function(){
+        if ($('#NotificationType').val() != null && $('#NotificationType').val() != undefined && $('#NotificationType').val() != '') {
+            if ($('#NotificationMsg').val() != null && $('#NotificationMsg').val() != undefined && $('#NotificationMsg').val() != '') {
+                 showToastr($('#NotificationType').val(), $('#NotificationMsg').val());
+                 $('#NotificationType').val('');
+                 $('#NotificationMsg').val('');
+            }
+        }
+    });
+</script>

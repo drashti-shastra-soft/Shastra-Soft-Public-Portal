@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>New Contact Form Submission</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #1b1933;
+            padding: 18px 25px;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+            color:white;
+        }
+
+            .header img {
+                max-height: 40px;
+            }
+
+            .header .info {
+                text-align: right;
+                font-size: 13px;
+            }
+
+        .title {
+            background: linear-gradient(90deg, #4A148C, #2196F3);
+            color: #ffffff;
+            text-align: center;
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+            font-size: 14px;
+            color: #333333;
+        }
+
+            .content table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            .content td {
+                padding: 6px 8px;
+            }
+
+        .label {
+            font-weight: bold;
+            color: #4A148C;
+            width: 30%;
+            text-align: right;
+        }
+
+        .value {
+            width: 70%;
+            text-align: left;
+        }
+
+        .footer {
+            background: #f4f6f9;
+            text-align: center;
+            padding: 18px;
+            font-size: 13px;
+            color: #555555;
+            border-top: 1px solid #ddd;
+        }
+
+            .footer strong {
+                display: block;
+                margin-top: 5px;
+                color: #4A148C;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="www.shastrasoft.net/wwwroot/Images/Logo1.png" alt="Shastra Soft Logo">
+            <div class="info">
+                📞 +91-98251 00201
+                <br>
+                <a href="shastrasoft.net" style="text-decoration:none; color:white">🌐 www.shastrasoft.net</a> 
+            </div>
+        </div>        
+        <div class="content">
+            <p>Dear Admin,</p>
+            <p>You’ve received a new inquiry from your website. Details are below:</p>
+            <table>
+                <tr>
+                    <td class="label">Name:</td>
+                    <td class="value">{{Name}}</td>
+                </tr>
+                <tr>
+                    <td class="label">Email:</td>
+                    <td class="value">{{Email}}</td>
+                </tr>
+                <tr>
+                    <td class="label">Subject:</td>
+                    <td class="value">{{Subject}}</td>
+                </tr>
+                <tr>
+                    <td class="label" style="vertical-align:top;">Message:</td>
+                    <td class="value">{{Message}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            Please reply promptly to connect with your customer.
+            <strong>Built with wisdom. Delivered with clarity.</strong>
+            © Shastra Soft
+        </div>
+    </div>
+</body>
+</html>
