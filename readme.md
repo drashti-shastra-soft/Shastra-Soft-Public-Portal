@@ -53,4 +53,3 @@ V4/
 │   ├── App_Start/                         # Routes, filters, DI setup
 │   ├── Config/                            # Environment-specific app settings
 │   └── Web.config
-├── ShastraSoft.Domain/                    # Domain models and list/pagination models
